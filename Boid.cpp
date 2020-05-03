@@ -10,8 +10,8 @@ Boid::Boid(int x, int y, vec2 size){
     _height = size.y;
     _velocity = vec2(rand() % 5 - 2.5, rand() % 5 -2.5);
     _acceleration = vec2(0,0); //(rand() %2 *-1)* 0.01,(rand() %2 *-1)*0.01);//(double) rand() / (RAND_MAX)*10 , ((double) rand() / (RAND_MAX)*10) );
-    _max_force = 0.2;
-    _max_speed = 10;
+    _max_force = 0.3;
+    _max_speed = 7;
     _perception = 50;
 }
 void drawPaperPlanes(const vec2 posicion, const vec2 velocidad){
